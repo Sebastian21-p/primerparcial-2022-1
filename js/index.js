@@ -1,9 +1,10 @@
 function getData(){
-    fetch('www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
-    .then(response => response.json())
-    .then(data => leer(data));
-    alert("Hola");
-    }
+  fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
+  .then(response => response.json())
+  .then(data => leer(data));
+
+  }
+
 
     function leer(data){        
         document.getElementById("cocteles").innerHTML =""
@@ -16,6 +17,7 @@ function getData(){
             let category = data.drinks[i].strCategory
 
             document.getElementById("cocteles").innerHTML +=`
+            <div class="col-xd-12 col-sm-4">
             <div class="card" style="width: 20rem;">
             <img src="img/coctel.jpg" class="card-img-top" alt="..." id="img">
             <div class="card-body">
@@ -26,12 +28,11 @@ function getData(){
               <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
             </div>
           </div>    
+          </div>
             `
-            
-           
         }
 
-        leer();
+
     }
 
-leer();
+getData();
