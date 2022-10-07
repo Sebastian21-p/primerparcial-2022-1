@@ -1,0 +1,52 @@
+body{
+    
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+h2{
+    background-color: rgb(238, 203, 3);
+    text-align: center;
+    border-radius: 1%;
+}
+
+h5{
+    text-align: center;
+}
+h6{
+    text-align: center;
+}
+#img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+p{
+    text-align: center;
+}
+.card{
+    background-color: antiquewhite;
+    margin-top: 10px;
+    height: auto;
+}
+#comprar{
+    width: 50%;
+    color: white;
+    font-size: 20px;
+    padding-left: 0px;
+    background: #2cba41;
+    cursor: pointer;
+    margin-left: 24%;
+}
+#carrito{
+    margin-top: 20px;
+    width: 25%;
+    color: white;
+    font-size: 20px;
+    padding-left: 0px;
+    background: #2cba41;
+    cursor: pointer;
+    align-items: center;
+}   
