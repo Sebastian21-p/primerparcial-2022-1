@@ -1,5 +1,5 @@
 function getData(){
-    fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
+    fetch('www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
     .then(response => response.json())
     .then(data => leer(data));
     alert("Hola");
@@ -7,7 +7,7 @@ function getData(){
 
     function leer(data){        
         document.getElementById("cocteles").innerHTML =""
-        for (let i = 0; i < 3; i++){
+        for (let i = 0; i < 6; i++){
             let nombre = data.drinks[i].strDrink;
             let ingrediente1 = data.drinks[i].strIngredient1
             let ingrediente2 = data.drinks[i].strIngredient2
@@ -19,7 +19,7 @@ function getData(){
             <div class="card" style="width: 20rem;">
             <img src="img/coctel.jpg" class="card-img-top" alt="..." id="img">
             <div class="card-body">
-              <h5 class="card-title">${nombre}</h5>
+              <h5 class="card-title">${nombre}</h5> 
               <h6>Ingredientes</h6>
               <p class="card-text" id="ingredientes">${ingrediente1}, ${ingrediente2}, ${ingrediente3}</p>
               <h2>${alcoholic}</h2>
@@ -28,9 +28,10 @@ function getData(){
           </div>    
             `
             
-    
+           
         }
 
-        
+        leer();
     }
-    leer();
+
+leer();
