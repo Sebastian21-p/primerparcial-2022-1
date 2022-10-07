@@ -1,0 +1,20 @@
+#pagar{
+    margin-top: 20px;
+    width: 50%;
+    color: white;
+    font-size: 20px;
+    padding-left: 0px;
+    background: #2cba41;
+    cursor: pointer;
+    
+}   
+
+.container{
+    background-color: antiquewhite;
+}
+h1{
+    text-align: center  ;
+}
+h2{
+    text-align: center;
+}
